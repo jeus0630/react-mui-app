@@ -4,8 +4,21 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
+type Props = {
+    setMode: (mode: 'light' | 'dark') => void;
+}
 
-export default function Sidebar() {
+export default function Sidebar({setMode}: Props) {
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        if(e.target.checked){
+            setMode('dark');
+            return;
+        }
+
+        setMode('light');
+    }
+
     return (
         <Box
             flex={1}
@@ -72,7 +85,7 @@ export default function Sidebar() {
                             <ListItemIcon>
                                 <DarkModeIcon></DarkModeIcon>
                             </ListItemIcon>
-                            <Switch {...label} defaultChecked />
+                            <Switch {...label} onChange={handleChange}/>
                         </ListItemButton>
                     </ListItem>
                 </List>
