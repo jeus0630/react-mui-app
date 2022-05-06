@@ -17,64 +17,66 @@ export default function Sidebar() {
                 }
             }}
         >
-            <List>
-                <ListItem disablePadding>
-                    <ListItemButton component='a' href='#home'>
-                        <ListItemIcon>
-                            <HomeIcon></HomeIcon>
-                        </ListItemIcon>
-                        <ListItemText primary="Homepage" />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton component='a' href='#home'>
-                        <ListItemIcon>
-                            <HomeIcon></HomeIcon>
-                        </ListItemIcon>
-                        <ListItemText primary="Homepage" />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton component='a' href='#home'>
-                        <ListItemIcon>
-                            <HomeIcon></HomeIcon>
-                        </ListItemIcon>
-                        <ListItemText primary="Homepage" />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton component='a' href='#home'>
-                        <ListItemIcon>
-                            <HomeIcon></HomeIcon>
-                        </ListItemIcon>
-                        <ListItemText primary="Homepage" />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton component='a' href='#home'>
-                        <ListItemIcon>
-                            <HomeIcon></HomeIcon>
-                        </ListItemIcon>
-                        <ListItemText primary="Homepage" />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton component='a' href='#home'>
-                        <ListItemIcon>
-                            <HomeIcon></HomeIcon>
-                        </ListItemIcon>
-                        <ListItemText primary="Homepage" />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton component='a' href='#home'>
-                        <ListItemIcon>
-                            <DarkModeIcon></DarkModeIcon>            
-                        </ListItemIcon>
-                        <Switch {...label} defaultChecked />
-                    </ListItemButton>
-                </ListItem>
-            </List>
+            <Box position={'fixed'}>
+                <List>
+                    <ListItem disablePadding>
+                        <ListItemButton component='a' href='#home'>
+                            <ListItemIcon>
+                                <HomeIcon></HomeIcon>
+                            </ListItemIcon>
+                            <ListItemText primary="Homepage" />
+                        </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton component='a' href='#home'>
+                            <ListItemIcon>
+                                <HomeIcon></HomeIcon>
+                            </ListItemIcon>
+                            <ListItemText primary="Homepage" />
+                        </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton component='a' href='#home'>
+                            <ListItemIcon>
+                                <HomeIcon></HomeIcon>
+                            </ListItemIcon>
+                            <ListItemText primary="Homepage" />
+                        </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton component='a' href='#home'>
+                            <ListItemIcon>
+                                <HomeIcon></HomeIcon>
+                            </ListItemIcon>
+                            <ListItemText primary="Homepage" />
+                        </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton component='a' href='#home'>
+                            <ListItemIcon>
+                                <HomeIcon></HomeIcon>
+                            </ListItemIcon>
+                            <ListItemText primary="Homepage" />
+                        </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton component='a' href='#home'>
+                            <ListItemIcon>
+                                <HomeIcon></HomeIcon>
+                            </ListItemIcon>
+                            <ListItemText primary="Homepage" />
+                        </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton component='a' href='#home'>
+                            <ListItemIcon>
+                                <DarkModeIcon></DarkModeIcon>
+                            </ListItemIcon>
+                            <Switch {...label} defaultChecked />
+                        </ListItemButton>
+                    </ListItem>
+                </List>
+            </Box>
         </Box>
     )
 }
